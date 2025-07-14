@@ -11,36 +11,51 @@
 
   <div class="container mx-auto px-5 lg:px-60">
     <header>
-      <nav class="navigation-bar text-white">
-        <div>LOGO</div>
+      <nav class="navigation-bar text-white flex items-center justify-between py-4">
         <div>
-        <ul>
-
-          <li>
-            <a href="/">home</a>
-          </li>
-
-          <li>
-            <a href="/">work</a>
-          </li>
-
-          <li>
-            <a href="/">about</a>
-          </li>
-
-          <li>
-            <a href="/">books</a>
-          </li>
-
-          <li>
-            <a href="/">links</a>
-          </li>
-
-        </ul>
+          LOGO
         </div>
-        <div>button</div>
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="/" class="hover:text-gray-300">home</a></li>
+          <li><a href="/" class="hover:text-gray-300">work</a></li>
+          <li><a href="/" class="hover:text-gray-300">about</a></li>
+          <li><a href="/" class="hover:text-gray-300">books</a></li>
+          <li><a href="/" class="hover:text-gray-300">links</a></li>
+        </ul>
+        <button class="hidden md:block text-white py-2 px-4 rounded">Contact Me</button>
+        <!-- Hamburger Icon -->
+        <button id="menu-btn" class="block md:hidden focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
       </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden text-white text-center">
+        <ul class="flex flex-col items-center space-y-2 py-4">
+            <li><a href="/" class="block py-2 hover:text-gray-300">home</a></li>
+            <li><a href="/" class="block py-2 hover:text-gray-300">work</a></li>
+            <li><a href="/" class="block py-2 hover:text-gray-300">about</a></li>
+            <li><a href="/" class="block py-2 hover:text-gray-300">books</a></li>
+            <li><a href="/" class="block py-2 hover:text-gray-300">links</a></li>
+        </ul>
+        <button class="text-white py-2 px-4 rounded w-full mt-2">Contact Me</button>
+      </div>
     </header>
+    <section>
+      <div class="row flex items-center mt-20">
+        <div class="profile-image mr-5">
+          <img src="./profile.jpg" alt="" class="rounded-full w-24 h-24 mx-auto">
+        </div>
+        <div class="profile-info">
+          <h1 class="text-3xl font-bold text-white">Shakil Ahmed</h1>
+          <span class="text-white">Developer, Maker, Dreamer</span>
+        </div>
+      </div>
+      <p class="profile-description text-left">
+        As a developer exploring the digital frontier, I weave tales of innovation and creativity through my projects. My journey is fueled by a passion for crafting bespoke solutions for brands and sharing knowledge through open-source contributions.
+      </p>
+      <p class="profile-build text-left">Building what I love at <span class="gradient-text">@webSolutionUs</span></p>
+    </section>
   </div>
 
   <script type="module" src="/src/main.js"></script>

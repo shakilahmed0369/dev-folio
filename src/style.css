@@ -6,8 +6,9 @@
 :root {
   --background-color: #0a0a0d;
   --text-color: #ffffff;
+  --text-secondary-color: rgba(255, 255, 255, 0.6);
   --border-color: rgba(82, 82, 82, 0.2);
-  --item-background-color: rgba(28, 22, 27, .4);
+  --item-background-color: rgba(114, 120, 136, .6);
 
   --font-family: "Inter-Medium", "Inter", sans-serif;
   --font-weight: 500;
@@ -45,4 +46,32 @@ body {
 .navigation-bar li {
   display: inline-block;
   margin-right: 20px;
+}
+
+.profile-description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  letter-spacing: -.34px;
+  line-height: 29px;
+  color: var(--text-color);
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.profile-build {
+  font-family: var(--font-family);
+  font-weight: 500;
+  letter-spacing: -.34px;
+  line-height: 29px;
+  color: var(--text-color);
+  font-size: 20px;
+  margin-top: 20px;
+  color: var(--item-background-color);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #ff0080, #7928ca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
