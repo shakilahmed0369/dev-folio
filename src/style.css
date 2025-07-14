@@ -8,7 +8,7 @@
   --text-color: #ffffff;
   --text-secondary-color: rgba(255, 255, 255, 0.6);
   --border-color: rgba(82, 82, 82, 0.2);
-  --item-background-color: rgba(114, 120, 136, .6);
+  --item-background-color: rgba(114, 120, 136, .16);
 
   --font-family: "Inter-Medium", "Inter", sans-serif;
   --font-weight: 500;
@@ -23,6 +23,10 @@
 
 body {
   background-color: var(--background-color);
+}
+
+section {
+  padding: 16px;
 }
 
 .navigation-bar {
@@ -66,7 +70,7 @@ body {
   color: var(--text-color);
   font-size: 20px;
   margin-top: 20px;
-  color: var(--item-background-color);
+  color: var(--text-secondary-color);
 }
 
 .gradient-text {
@@ -74,4 +78,155 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.section-title h3 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 1.2em;
+  color: var(--text-secondary-color);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.section-title a {
+  font-family: var(--font-family);
+  background: linear-gradient(90deg, #ff0080, #7928ca);
+  font-weight: 500;
+  line-height: 29px;
+  font-size: 14px;
+  letter-spacing: var(--letter-spacing);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(12px);
+  background-color: var(--item-background-color);
+  border: 1px solid var(--border-color);
+  transition: background-color 0.3s ease;
+}
+
+.skill-item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.skill-name {
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--item-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.project-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(21, 44, 251);
+  color: white;
+  padding: 0px 10px;
+  border-radius: 50px;
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 10px;
+  line-height: var(--line-height);
+  text-transform: uppercase;
+}
+
+.project-title {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--text-color);
+  margin-top: 10px;
+}
+
+.project-description {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--text-secondary-color);
+  margin-top: 5px;
+}
+
+.contact {
+  padding: 20px;
+  background-color: var(--item-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 20px;
+  color: white;
+}
+
+.contact-info h3 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 29px;
+  color: var(--text-color);
+  background: linear-gradient(90deg, #ff0080, #7928ca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 10px 0px 20px 0px;
+}
+
+.contact-info p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: var(--text-secondary-color);
 }
