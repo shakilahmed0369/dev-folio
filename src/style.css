@@ -26,7 +26,7 @@ body {
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .navigation-bar {
@@ -321,6 +321,44 @@ section {
   line-height: 22px;
   color: rgba(114, 120, 136, .6);
 }
+
+.about-title {
+  padding: 0px 0px 40px 0px;
+}
+
+.about-title h4 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 22px;
+  color: rgba(114, 120, 136, .6);
+  text-align: center;
+}
+
+.about-item {
+  margin-bottom: 40px;
+}
+
+.about-item h5 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 22px;
+  color: rgba(74, 87, 111, 0.7); 
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.about-item p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+}
+
 
 
 
