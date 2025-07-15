@@ -134,8 +134,6 @@ section {
 }
 
 .project-item {
-  display: flex;
-  flex-direction: column;
   background-color: var(--item-background-color);
   border: 1px solid var(--border-color);
   border-radius: 10px;
@@ -249,26 +247,32 @@ section {
 
 .page-heading {
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
 
 .page-heading h3{
   font-family: var(--font-family);
   font-weight: 800;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 29px;
   color: var(--text-color);
   background: linear-gradient(90deg, #ff0080, #7928ca);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 10px 0px 20px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 .page-heading p{
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 20px;
-  line-height: 22px;
-  color: var(--text-secondary-color);
+  font-style: normal;
+
+  font-size: 18px;
+  line-height: 140%;
+  color: white;
+  text-align: center;
+  padding: 0px 50px 0px 50px;
 }
 
 .page-heading .divider {
@@ -277,3 +281,28 @@ section {
   height: 2px;
   margin-top: 20px;
 }
+
+.project-categories {
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+
+}
+
+.project-categories button {
+  padding: 5px 10px;
+  margin: 0px 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.project-categories .active {
+  background-color: var(--item-background-color);
+}
+
+
