@@ -285,8 +285,7 @@ section {
 .project-categories {
   align-items: center;
   justify-content: center;
-  margin: 20px 0px 20px 0px;
-
+  margin: 20px 0px 40px 0px;
 }
 
 .project-categories button {
@@ -304,5 +303,25 @@ section {
 .project-categories .active {
   background-color: var(--item-background-color);
 }
+
+.footer-content {
+  padding: 100px;
+}
+.footer-content p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: rgba(114, 120, 136, .6);
+}
+
+.footer-items {
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(114, 120, 136, .6);
+}
+
+
 
 
