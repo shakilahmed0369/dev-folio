@@ -359,6 +359,42 @@ section {
   color: white;
 }
 
+.about-image-shadow {
+  position: relative;
+  display: inline-block;
+}
+
+.about-image {
+  display: block;
+  width: 140px;
+  height: auto;
+  border-radius: 50%; /* Optional */
+  position: relative;
+  z-index: 1;
+}
+
+/* Bottom glow */
+.about-image-shadow::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 135px;
+  height: 128px;
+  aspect-ratio: 0.875 / 1;
+  background-color: rgba(247, 110, 110, 0.41);
+  filter: blur(17px);
+  border-radius: 80px;
+  z-index: 0;
+}
+
+
+.about-love {
+  width: 127px;
+  margin-top: 15px;
+}
+
 
 
 
