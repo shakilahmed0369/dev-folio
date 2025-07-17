@@ -221,10 +221,10 @@ section {
   color: white;
 }
 
-.contact-info h3 {
+.contact-info h2 {
   font-family: var(--font-family);
   font-weight: 800;
-  font-size: 44px;
+  font-size: 40px;
   line-height: 29px;
   color: var(--text-color);
   background: linear-gradient(90deg, #ff0080, #7928ca);
