@@ -98,7 +98,7 @@ section {
   margin-bottom: 16px;
 }
 
-.section-title h3 {
+.section-title h2, .section-title h3 {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 600;
@@ -263,7 +263,7 @@ section {
   padding-bottom: 50px;
 }
 
-.page-heading h3 {
+.page-heading h1 {
   font-family: var(--font-family);
   font-weight: 800;
   font-size: 25px;

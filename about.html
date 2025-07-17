@@ -8,10 +8,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev Folio</title>
+    <title>About | Dev Folio - Shakil Ahmed</title>
+    <meta name="description" content="Learn more about Shakil Ahmed, developer, and his professional experience.">
   </head>
   <body>
     <div class="container mx-auto px-4 sm:px-6 max-w-[708px]">
+      <main>
       <!-- ================= Navigation Bar ================ -->
       <header>
         <nav
@@ -21,10 +23,10 @@
           <!-- Desktop Menu -->
           <ul class="hidden md:flex space-x-6">
             <li><a href="/" class="hover:text-gray-300">home</a></li>
-            <li><a href="/" class="hover:text-gray-300">work</a></li>
-            <li><a href="/" class="hover:text-gray-300">about</a></li>
-            <li><a href="/" class="hover:text-gray-300">books</a></li>
-            <li><a href="/" class="hover:text-gray-300">links</a></li>
+            <li><a href="/work.html" class="hover:text-gray-300">work</a></li>
+            <li><a href="/about.html" class="hover:text-gray-300">about</a></li>
+            <li><a href="/books.html" class="hover:text-gray-300">books</a></li>
+            <li><a href="/blog.html" class="hover:text-gray-300">blog</a></li>
           </ul>
           <button class="hidden md:block text-white py-2 px-4 rounded">
             Contact Me
@@ -51,16 +53,10 @@
         <div id="mobile-menu" class="hidden md:hidden text-white text-center">
           <ul class="flex flex-col items-center space-y-2 py-4">
             <li><a href="/" class="block py-2 hover:text-gray-300">home</a></li>
-            <li><a href="/" class="block py-2 hover:text-gray-300">work</a></li>
-            <li>
-              <a href="/" class="block py-2 hover:text-gray-300">about</a>
-            </li>
-            <li>
-              <a href="/" class="block py-2 hover:text-gray-300">books</a>
-            </li>
-            <li>
-              <a href="/" class="block py-2 hover:text-gray-300">links</a>
-            </li>
+            <li><a href="/work.html" class="block py-2 hover:text-gray-300">work</a></li>
+            <li><a href="/about.html" class="block py-2 hover:text-gray-300">about</a></li>
+            <li><a href="/books.html" class="block py-2 hover:text-gray-300">books</a></li>
+            <li><a href="/" class="block py-2 hover:text-gray-300">links</a></li>
           </ul>
           <button class="text-white py-2 px-4 rounded w-full mt-2">
             Contact Me
@@ -69,13 +65,13 @@
       </header>
 
       <section class="page-heading">
-        <h3>About</h3>
+        <h1>About</h1>
         <p>
           It's not a challenge to get in touch with me, emailing me at
-          sakilhossain01969@gmail.com is always an option.
+          <a href="mailto:sakilhossain01969@gmail.com">sakilhossain01969@gmail.com</a> is always an option.
         </p>
         <div class="divider">
-          <img src="./devider.svg" alt="" />
+          <img src="./devider.svg" alt="divider graphic" />
         </div>
       </section>
       <div class="about-title">
@@ -133,7 +129,7 @@
         <section>
           <div class="flex justify-center">
             <div class="about-image-shadow">
-              <img src="./profile.jpg" alt="" class="about-image" />
+              <img src="./profile.jpg" alt="Shakil Ahmed profile photo" class="about-image" />
             </div>
           </div>
 
@@ -171,8 +167,11 @@
           </div>
         </footer>
       </section>
+      </main>
+      <footer class="footer-content flex-col text-center text-white items-center mt-10">
+        <div>© 2025 Shakil Ahmed. All rights reserved.</div>
+      </footer>
     </div>
-
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
