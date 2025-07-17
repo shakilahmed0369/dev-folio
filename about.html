@@ -1,152 +1,178 @@
+<!--
+  about.html - Dev Folio
+  About page for Shakil Ahmed's developer portfolio.
+  Contains navigation and professional experience sections.
+-->
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Folio</title>
-</head>
-
-<body>
-
+  </head>
+  <body>
     <div class="container mx-auto px-4 sm:px-6 max-w-[708px]">
-        <header>
-            <nav class="navigation-bar text-white flex items-center justify-between py-4">
-                <div>
-                    LOGO
-                </div>
-                <!-- Desktop Menu -->
-                <ul class="hidden md:flex space-x-6">
-                    <li><a href="/" class="hover:text-gray-300">home</a></li>
-                    <li><a href="/" class="hover:text-gray-300">work</a></li>
-                    <li><a href="/" class="hover:text-gray-300">about</a></li>
-                    <li><a href="/" class="hover:text-gray-300">books</a></li>
-                    <li><a href="/" class="hover:text-gray-300">links</a></li>
-                </ul>
-                <button class="hidden md:block text-white py-2 px-4 rounded">Contact Me</button>
-                <!-- Hamburger Icon -->
-                <button id="menu-btn" class="block md:hidden focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </nav>
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden text-white text-center">
-                <ul class="flex flex-col items-center space-y-2 py-4">
-                    <li><a href="/" class="block py-2 hover:text-gray-300">home</a></li>
-                    <li><a href="/" class="block py-2 hover:text-gray-300">work</a></li>
-                    <li><a href="/" class="block py-2 hover:text-gray-300">about</a></li>
-                    <li><a href="/" class="block py-2 hover:text-gray-300">books</a></li>
-                    <li><a href="/" class="block py-2 hover:text-gray-300">links</a></li>
-                </ul>
-                <button class="text-white py-2 px-4 rounded w-full mt-2">Contact Me</button>
-            </div>
-        </header>
+      <!-- ================= Navigation Bar ================ -->
+      <header>
+        <nav
+          class="navigation-bar text-white flex items-center justify-between py-4"
+        >
+          <div>LOGO</div>
+          <!-- Desktop Menu -->
+          <ul class="hidden md:flex space-x-6">
+            <li><a href="/" class="hover:text-gray-300">home</a></li>
+            <li><a href="/" class="hover:text-gray-300">work</a></li>
+            <li><a href="/" class="hover:text-gray-300">about</a></li>
+            <li><a href="/" class="hover:text-gray-300">books</a></li>
+            <li><a href="/" class="hover:text-gray-300">links</a></li>
+          </ul>
+          <button class="hidden md:block text-white py-2 px-4 rounded">
+            Contact Me
+          </button>
+          <!-- Hamburger Icon -->
+          <button id="menu-btn" class="block md:hidden focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden text-white text-center">
+          <ul class="flex flex-col items-center space-y-2 py-4">
+            <li><a href="/" class="block py-2 hover:text-gray-300">home</a></li>
+            <li><a href="/" class="block py-2 hover:text-gray-300">work</a></li>
+            <li>
+              <a href="/" class="block py-2 hover:text-gray-300">about</a>
+            </li>
+            <li>
+              <a href="/" class="block py-2 hover:text-gray-300">books</a>
+            </li>
+            <li>
+              <a href="/" class="block py-2 hover:text-gray-300">links</a>
+            </li>
+          </ul>
+          <button class="text-white py-2 px-4 rounded w-full mt-2">
+            Contact Me
+          </button>
+        </div>
+      </header>
 
-        <section class="page-heading">
-            <h3>About</h3>
-            <p>
-                It's not a challenge to get in touch with me, emailing me at sakilhossain01969@gmail.com is always an
-                option.
-            </p>
-            <div class="divider">
-                <img src="./devider.svg" alt="">
-            </div>
-        </section>
-        <div class="about-title">
-            <h4>Experience</h4>
+      <section class="page-heading">
+        <h3>About</h3>
+        <p>
+          It's not a challenge to get in touch with me, emailing me at
+          sakilhossain01969@gmail.com is always an option.
+        </p>
+        <div class="divider">
+          <img src="./devider.svg" alt="" />
         </div>
-        <div class="about-item">
-            <h5>2022 - Current</h5>
-            <p>
-                Currently working at websolutionus, I focus on developing high-quality web and app solutions for a
-                diverse range of clients. My role involves designing and building scalable, efficient applications, with
-                a focus on delivering exceptional user experiences. I collaborate closely with teams to bring innovative
-                digital solutions to life, ensuring that every project meets the needs of modern businesses.
-            </p>
-        </div>
-        <div class="about-item">
-            <h5>2022 - Current</h5>
-            <p>
-                Currently working at websolutionus, I focus on developing high-quality web and app solutions for a
-                diverse range of clients. My role involves designing and building scalable, efficient applications, with
-                a focus on delivering exceptional user experiences. I collaborate closely with teams to bring innovative
-                digital solutions to life, ensuring that every project meets the needs of modern businesses.
-            </p>
-        </div>
-        <hr class="py-4">
-        <div class="about-title">
-            <h4>Education</h4>
-        </div>
-        <div class="about-item">
-            <h5>2022 - Current</h5>
-            <p>
-                Currently working at websolutionus, I focus on developing high-quality web and app solutions for a
-                diverse range of clients. My role involves designing and building scalable, efficient applications, with
-                a focus on delivering exceptional user experiences. I collaborate closely with teams to bring innovative
-                digital solutions to life, ensuring that every project meets the needs of modern businesses.
-            </p>
-        </div>
-        <div class="about-item">
-            <h5>2022 - Current</h5>
-            <p>
-                Currently working at websolutionus, I focus on developing high-quality web and app solutions for a
-                diverse range of clients. My role involves designing and building scalable, efficient applications, with
-                a focus on delivering exceptional user experiences. I collaborate closely with teams to bring innovative
-                digital solutions to life, ensuring that every project meets the needs of modern businesses.
-            </p>
-        </div>
+      </section>
+      <div class="about-title">
+        <h4>Experience</h4>
+      </div>
+      <div class="about-item">
+        <h5>2022 - Current</h5>
+        <p>
+          Currently working at websolutionus, I focus on developing high-quality
+          web and app solutions for a diverse range of clients. My role involves
+          designing and building scalable, efficient applications, with a focus
+          on delivering exceptional user experiences. I collaborate closely with
+          teams to bring innovative digital solutions to life, ensuring that
+          every project meets the needs of modern businesses.
+        </p>
+      </div>
+      <div class="about-item">
+        <h5>2022 - Current</h5>
+        <p>
+          Currently working at websolutionus, I focus on developing high-quality
+          web and app solutions for a diverse range of clients. My role involves
+          designing and building scalable, efficient applications, with a focus
+          on delivering exceptional user experiences. I collaborate closely with
+          teams to bring innovative digital solutions to life, ensuring that
+          every project meets the needs of modern businesses.
+        </p>
+      </div>
+      <hr class="py-4" />
+      <div class="about-title">
+        <h4>Education</h4>
+      </div>
+      <div class="about-item">
+        <h5>2022 - Current</h5>
+        <p>
+          Currently working at websolutionus, I focus on developing high-quality
+          web and app solutions for a diverse range of clients. My role involves
+          designing and building scalable, efficient applications, with a focus
+          on delivering exceptional user experiences. I collaborate closely with
+          teams to bring innovative digital solutions to life, ensuring that
+          every project meets the needs of modern businesses.
+        </p>
+      </div>
+      <div class="about-item">
+        <h5>2022 - Current</h5>
+        <p>
+          Currently working at websolutionus, I focus on developing high-quality
+          web and app solutions for a diverse range of clients. My role involves
+          designing and building scalable, efficient applications, with a focus
+          on delivering exceptional user experiences. I collaborate closely with
+          teams to bring innovative digital solutions to life, ensuring that
+          every project meets the needs of modern businesses.
+        </p>
+      </div>
+      <section>
         <section>
+          <div class="flex justify-center">
+            <div class="about-image-shadow">
+              <img src="./profile.jpg" alt="" class="about-image" />
+            </div>
+          </div>
 
-            <section>
-                <div class="flex justify-center">
-                    <div class="about-image-shadow">
-
-                        <img src="./profile.jpg" alt="" class="about-image">
-                    </div>
-                </div>
-
-                <div class="about-love mx-auto">
-                    <svg viewBox="0 0 127 51" id="svg12392834201">
-                        <path
-                            d="M 12.849 1.227 C 13.747 -0.948 17.317 0.011 16.408 2.212 C 12.567 11.508 8.702 20.843 6.084 30.577 C 5.01 34.569 2.617 40.729 3.8 44.858 C 5.095 49.375 15.989 46.187 19.195 45.346 C 21.499 44.743 22.472 48.317 20.176 48.919 C 15.605 50.117 7.359 52.473 2.928 49.711 C -0.524 47.559 -0.209 43.111 0.341 39.621 C 2.131 28.266 6.208 17.444 10.542 6.829 L 11.309 4.958 C 11.821 3.712 12.336 2.468 12.849 1.227 Z M 70.797 21.628 C 73.038 20.988 75.651 21.514 75.401 24.292 C 75.136 27.234 72.224 30.735 69.941 32.402 C 68.455 33.486 66.776 34.141 65.094 34.385 C 64.671 36.495 65.164 38.315 67.784 38.61 C 70.815 38.951 73.173 35.974 74.918 33.937 C 76.47 32.126 79.07 34.758 77.528 36.557 C 75.231 39.239 72.47 42.051 68.731 42.296 C 65.806 42.487 62.908 41.141 61.779 38.315 C 61.284 37.076 61.153 35.677 61.306 34.228 C 59.436 33.778 57.766 32.762 56.606 31.203 C 55.081 33.974 53.557 36.746 52.032 39.519 C 50.607 42.109 49.462 46.179 46.395 47.101 C 45.769 47.289 45.056 47.084 44.599 46.624 C 42.708 44.718 43.202 41.571 43.066 39.06 C 42.953 36.948 42.839 34.836 42.725 32.724 C 41.642 33.869 40.403 34.942 39.141 35.685 C 40.335 41.205 34.378 49.212 27.778 47.903 C 23.37 47.029 20.551 43.004 21.481 38.557 C 22.562 33.385 26.607 29.073 30.99 26.447 C 33.037 25.221 34.891 28.425 32.853 29.646 C 29.53 31.636 22.867 37.709 25.434 42.242 C 29.068 48.659 36.388 40.731 35.455 36.665 C 34.22 36.487 33.115 35.658 32.31 33.855 C 31.673 32.43 32.716 30.695 34.394 31.133 C 35.668 31.466 36.662 31.999 37.415 32.672 C 39.328 31.755 41.803 28.019 42.508 26.826 C 42.592 26.52 42.746 26.269 42.956 26.083 C 43.524 25.395 44.412 25.424 45.097 25.859 C 45.653 26.127 46.088 26.647 46.13 27.433 C 46.278 30.168 46.425 32.904 46.573 35.64 C 46.647 37.008 46.721 38.376 46.794 39.744 C 46.801 39.864 46.802 40.054 46.803 40.288 L 46.803 40.588 C 46.804 40.907 46.806 41.275 46.816 41.651 C 47.227 40.816 47.585 39.939 47.798 39.552 C 48.612 38.072 49.427 36.591 50.242 35.11 C 51.823 32.233 53.405 29.357 54.988 26.48 C 55.001 25.768 55.378 25.3 55.895 25.074 C 57.188 23.944 59.486 25.453 58.762 27.233 C 59.125 29.407 60.491 30.467 62.179 30.731 C 63.79 26.535 67.262 22.638 70.797 21.628 Z M 71.511 24.736 L 71.47 24.855 C 71.081 25.785 69.014 27.072 68.524 27.632 C 68.105 28.11 67.563 28.865 67.027 29.76 C 67.765 29.367 68.435 28.882 68.966 28.335 C 69.332 27.958 71.302 25.76 71.513 24.731 Z"
-                            fill="#ffffff">
-                        </path>
-                        <path
-                            d="M 105.022 14.043 C 107.712 13.517 110.398 14.273 112.583 16.169 C 115.68 18.859 115.882 23.46 113.124 28.479 C 111.124 32.119 108.643 35.592 106.245 38.951 C 105.231 40.371 104.182 41.84 103.195 43.286 C 102.843 43.802 102.173 44 101.507 44 C 101.083 44 100.661 43.92 100.323 43.792 C 99.996 43.726 99.737 43.599 99.552 43.416 L 99.015 42.881 C 95.177 39.059 91.207 35.108 87.77 30.874 C 84.269 26.561 83.157 22.218 84.641 18.647 C 86.073 15.201 89.85 13.29 93.425 14.201 C 95.616 14.759 97.308 16.133 98.568 18.383 C 100.13 16.128 102.458 14.543 105.022 14.043 Z M 91.834 16.631 C 91.176 16.631 90.472 16.942 89.701 17.569 C 87.212 19.594 87.429 23.325 88.749 26.123 C 89.914 28.594 91.871 30.692 93.765 32.721 C 94.09 33.07 94.416 33.418 94.735 33.767 C 96.851 36.074 98.777 38.182 100.643 40.318 L 106.07 32.502 C 106.373 32.068 106.686 31.628 107.005 31.183 C 108.824 28.639 110.705 26.009 111.146 23.069 L 111.179 22.808 C 111.384 20.895 110.707 18.941 109.416 17.768 C 108.66 17.081 107.353 16.364 105.421 16.846 C 102.367 17.61 100.727 20.903 100.456 23.828 C 100.39 24.537 99.767 25.02 98.828 25.088 C 97.956 25.153 96.921 24.832 96.715 23.983 C 96.007 21.06 94.479 17.41 92.497 16.741 C 92.281 16.668 92.06 16.631 91.834 16.631 Z M 122.584 9.555 C 123.161 7.165 126.887 7.998 126.31 10.388 C 125.69 12.958 123.99 14.845 121.617 15.934 C 120.675 16.368 119.502 15.587 119.218 14.697 C 118.877 13.63 119.52 12.726 120.456 12.297 C 121.556 11.791 122.308 10.701 122.584 9.555 Z M 110.805 3.644 C 111.141 2.664 111.984 1.951 113.084 2.197 C 114.011 2.404 114.866 3.5 114.531 4.477 L 113.094 8.658 C 112.758 9.637 111.914 10.351 110.815 10.105 C 109.888 9.897 109.033 8.801 109.368 7.825 C 109.847 6.431 110.326 5.038 110.805 3.644 Z M 99.368 1.496 C 99.715 0.52 100.539 -0.199 101.648 0.049 C 102.567 0.255 103.44 1.356 103.094 2.329 C 102.76 3.269 102.769 3.797 103.092 4.636 C 103.463 5.603 102.794 6.735 101.854 7.035 C 100.832 7.362 99.823 6.759 99.454 5.797 C 98.934 4.444 98.88 2.866 99.368 1.496 Z"
-                            fill="#ffffff">
-                        </path>
-                    </svg>
-                </div>
-
-            </section>
-
-
+          <div class="about-love mx-auto">
+            <svg viewBox="0 0 127 51" id="svg12392834201">
+              <path
+                d="M 12.849 1.227 C 13.747 -0.948 17.317 0.011 16.408 2.212 C 12.567 11.508 8.702 20.843 6.084 30.577 C 5.01 34.569 2.617 40.729 3.8 44.858 C 5.095 49.375 15.989 46.187 19.195 45.346 C 21.499 44.743 22.472 48.317 20.176 48.919 C 15.605 50.117 7.359 52.473 2.928 49.711 C -0.524 47.559 -0.209 43.111 0.341 39.621 C 2.131 28.266 6.208 17.444 10.542 6.829 L 11.309 4.958 C 11.821 3.712 12.336 2.468 12.849 1.227 Z M 70.797 21.628 C 73.038 20.988 75.651 21.514 75.401 24.292 C 75.136 27.234 72.224 30.735 69.941 32.402 C 68.455 33.486 66.776 34.141 65.094 34.385 C 64.671 36.495 65.164 38.315 67.784 38.61 C 70.815 38.951 73.173 35.974 74.918 33.937 C 76.47 32.126 79.07 34.758 77.528 36.557 C 75.231 39.239 72.47 42.051 68.731 42.296 C 65.806 42.487 62.908 41.141 61.779 38.315 C 61.284 37.076 61.153 35.677 61.306 34.228 C 59.436 33.778 57.766 32.762 56.606 31.203 C 55.081 33.974 53.557 36.746 52.032 39.519 C 50.607 42.109 49.462 46.179 46.395 47.101 C 45.769 47.289 45.056 47.084 44.599 46.624 C 42.708 44.718 43.202 41.571 43.066 39.06 C 42.953 36.948 42.839 34.836 42.725 32.724 C 41.642 33.869 40.403 34.942 39.141 35.685 C 40.335 41.205 34.378 49.212 27.778 47.903 C 23.37 47.029 20.551 43.004 21.481 38.557 C 22.562 33.385 26.607 29.073 30.99 26.447 C 33.037 25.221 34.891 28.425 32.853 29.646 C 29.53 31.636 22.867 37.709 25.434 42.242 C 29.068 48.659 36.388 40.731 35.455 36.665 C 34.22 36.487 33.115 35.658 32.31 33.855 C 31.673 32.43 32.716 30.695 34.394 31.133 C 35.668 31.466 36.662 31.999 37.415 32.672 C 39.328 31.755 41.803 28.019 42.508 26.826 C 42.592 26.52 42.746 26.269 42.956 26.083 C 43.524 25.395 44.412 25.424 45.097 25.859 C 45.653 26.127 46.088 26.647 46.13 27.433 C 46.278 30.168 46.425 32.904 46.573 35.64 C 46.647 37.008 46.721 38.376 46.794 39.744 C 46.801 39.864 46.802 40.054 46.803 40.288 L 46.803 40.588 C 46.804 40.907 46.806 41.275 46.816 41.651 C 47.227 40.816 47.585 39.939 47.798 39.552 C 48.612 38.072 49.427 36.591 50.242 35.11 C 51.823 32.233 53.405 29.357 54.988 26.48 C 55.001 25.768 55.378 25.3 55.895 25.074 C 57.188 23.944 59.486 25.453 58.762 27.233 C 59.125 29.407 60.491 30.467 62.179 30.731 C 63.79 26.535 67.262 22.638 70.797 21.628 Z M 71.511 24.736 L 71.47 24.855 C 71.081 25.785 69.014 27.072 68.524 27.632 C 68.105 28.11 67.563 28.865 67.027 29.76 C 67.765 29.367 68.435 28.882 68.966 28.335 C 69.332 27.958 71.302 25.76 71.513 24.731 Z"
+                fill="#ffffff"
+              ></path>
+              <path
+                d="M 105.022 14.043 C 107.712 13.517 110.398 14.273 112.583 16.169 C 115.68 18.859 115.882 23.46 113.124 28.479 C 111.124 32.119 108.643 35.592 106.245 38.951 C 105.231 40.371 104.182 41.84 103.195 43.286 C 102.843 43.802 102.173 44 101.507 44 C 101.083 44 100.661 43.92 100.323 43.792 C 99.996 43.726 99.737 43.599 99.552 43.416 L 99.015 42.881 C 95.177 39.059 91.207 35.108 87.77 30.874 C 84.269 26.561 83.157 22.218 84.641 18.647 C 86.073 15.201 89.85 13.29 93.425 14.201 C 95.616 14.759 97.308 16.133 98.568 18.383 C 100.13 16.128 102.458 14.543 105.022 14.043 Z M 91.834 16.631 C 91.176 16.631 90.472 16.942 89.701 17.569 C 87.212 19.594 87.429 23.325 88.749 26.123 C 89.914 28.594 91.871 30.692 93.765 32.721 C 94.09 33.07 94.416 33.418 94.735 33.767 C 96.851 36.074 98.777 38.182 100.643 40.318 L 106.07 32.502 C 106.373 32.068 106.686 31.628 107.005 31.183 C 108.824 28.639 110.705 26.009 111.146 23.069 L 111.179 22.808 C 111.384 20.895 110.707 18.941 109.416 17.768 C 108.66 17.081 107.353 16.364 105.421 16.846 C 102.367 17.61 100.727 20.903 100.456 23.828 C 100.39 24.537 99.767 25.02 98.828 25.088 C 97.956 25.153 96.921 24.832 96.715 23.983 C 96.007 21.06 94.479 17.41 92.497 16.741 C 92.281 16.668 92.06 16.631 91.834 16.631 Z M 122.584 9.555 C 123.161 7.165 126.887 7.998 126.31 10.388 C 125.69 12.958 123.99 14.845 121.617 15.934 C 120.675 16.368 119.502 15.587 119.218 14.697 C 118.877 13.63 119.52 12.726 120.456 12.297 C 121.556 11.791 122.308 10.701 122.584 9.555 Z M 110.805 3.644 C 111.141 2.664 111.984 1.951 113.084 2.197 C 114.011 2.404 114.866 3.5 114.531 4.477 L 113.094 8.658 C 112.758 9.637 111.914 10.351 110.815 10.105 C 109.888 9.897 109.033 8.801 109.368 7.825 C 109.847 6.431 110.326 5.038 110.805 3.644 Z M 99.368 1.496 C 99.715 0.52 100.539 -0.199 101.648 0.049 C 102.567 0.255 103.44 1.356 103.094 2.329 C 102.76 3.269 102.769 3.797 103.092 4.636 C 103.463 5.603 102.794 6.735 101.854 7.035 C 100.832 7.362 99.823 6.759 99.454 5.797 C 98.934 4.444 98.88 2.866 99.368 1.496 Z"
+                fill="#ffffff"
+              ></path>
+            </svg>
+          </div>
         </section>
-        <section>
-            <footer>
-                <div class="footer-content flex-col text-center text-white items-center">
-                    <p>&copy;shakil ahmed 2025</p>
-                    <div class="footer-items flex justify-center gap-2">
-                        <div class="footer-item">
-                            <a href="/">github</a>
-                        </div>
-                        <div class="footer-item">
-                            <a href="/">linkedin</a>
-                        </div>
-                        <div class="footer-item">
-                            <a href="/">discord</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </section>
+      </section>
+      <section>
+        <footer>
+          <div
+            class="footer-content flex-col text-center text-white items-center"
+          >
+            <p>&copy;shakil ahmed 2025</p>
+            <div class="footer-items flex justify-center gap-2">
+              <div class="footer-item">
+                <a href="/">github</a>
+              </div>
+              <div class="footer-item">
+                <a href="/">linkedin</a>
+              </div>
+              <div class="footer-item">
+                <a href="/">discord</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
     </div>
 
     <script type="module" src="/src/main.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,34 +1,46 @@
+/* Tailwind base, components, and utilities imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+/*
+  CSS Custom Properties (Variables)
+  These variables define the color palette, typography, and layout settings
+  for consistent theming across the application.
+*/
 :root {
-  --background-color: #0a0a0d;
-  --text-color: #ffffff;
-  --text-secondary-color: rgba(255, 255, 255, 0.6);
-  --border-color: rgba(82, 82, 82, 0.2);
-  --item-background-color: rgba(114, 120, 136, .16);
+  --background-color: #0a0a0d;              /* Main background color */
+  --text-color: #ffffff;                    /* Primary text color */
+  --text-secondary-color: rgba(255, 255, 255, 0.6); /* Secondary text color */
+  --border-color: rgba(82, 82, 82, 0.2);    /* Border color for UI elements */
+  --item-background-color: rgba(114, 120, 136, .16); /* Card/item background */
 
-  --font-family: "Inter-Medium", "Inter", sans-serif;
-  --font-weight: 500;
-  --letter-spacing: -0.18px;
-  --line-height: 22px;
+  --font-family: "Inter-Medium", "Inter", sans-serif; /* Main font family */
+  --font-weight: 500;                       /* Default font weight */
+  --letter-spacing: -0.18px;                /* Default letter spacing */
+  --line-height: 22px;                      /* Default line height */
 }
 
+/* Reset default margin and padding for all elements */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Set body background color */
 body {
   background-color: var(--background-color);
 }
 
+/* Add spacing between sections */
 section {
   margin-bottom: 60px;
 }
 
+/*
+  Navigation Bar Styling
+  Styles for the main navigation bar, including layout, color, and spacing.
+*/
 .navigation-bar {
   color: var(--text-color);
   backdrop-filter: blur(12px);
@@ -495,7 +507,7 @@ section {
 }
 
 .project-image {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .project-content p {
