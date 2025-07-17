@@ -148,15 +148,7 @@ section {
 .project-item {
   border-radius: 10px;
   padding: 10px;
-  transition: background-color 0.3s ease, transform 0.2s cubic-bezier(.25,.46,.45,.94), box-shadow 0.2s cubic-bezier(.25,.46,.45,.94);
-  will-change: transform, box-shadow;
-  perspective: 600px;
-}
-
-.project-item-3d {
-  backdrop-filter: blur(12px);
-  background-color: var(--item-background-color);
-  border: 1px solid var(--border-color);
+  transition: background-color 0.3s ease;
 }
 
 .project-item:hover {
