@@ -146,10 +146,15 @@ section {
 }
 
 .project-item {
-  background-color: var(--item-background-color);
-  border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.project-item:hover {
+  background-color: var(--item-background-color);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
 }
 
 .project-item img {
@@ -185,7 +190,6 @@ section {
   font-size: 16px;
   line-height: 22px;
   color: var(--text-color);
-  margin-top: 10px;
 }
 
 .project-description {
@@ -506,10 +510,6 @@ section {
   border-radius: 30px;
 }
 
-.project-image {
-  margin-bottom: 10px;
-}
-
 .project-content p {
   font-family: var(--font-family);
   font-weight: 400;
@@ -560,4 +560,29 @@ section {
   margin-top: 20px;
   margin-bottom: 20px;
   border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 639px) {
+  .project-image {
+    width: 100px !important;
+    height: 100px !important;
+    margin: 0 !important;
+  }
+
+  .image-wrapper {
+    width: 150px !important;
+    object-fit: cover;
+  }
+
+  .project-item {
+    border-radius: 15px;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+  }
 }
