@@ -160,6 +160,16 @@ section {
   transform: translate(8px, -50%);
 }
 
+.download-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-right: 6px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid currentColor;
+}
+
 .gradient-text {
   background: linear-gradient(90deg, #ff0080, #7928ca);
   -webkit-background-clip: text;
