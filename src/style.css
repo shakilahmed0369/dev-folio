@@ -1,4 +1,5 @@
 /* Tailwind base, components, and utilities imports */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -40,6 +41,33 @@
   border-radius: 50%;
   animation: pulse 2s infinite;
   opacity: 0;
+}
+
+.floating-project-img {
+  pointer-events: none;
+  opacity: 0.96;
+  filter: drop-shadow(0 8px 32px rgba(0,0,0,0.22));
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+  transition: opacity 0.25s, transform 0.25s, box-shadow 0.25s;
+  will-change: transform, opacity;
+  z-index: 9999;
+}
+
+.floating-project-img {
+  animation: floatUp 0.4s cubic-bezier(.25,.8,.25,1) both;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.92) rotate(-3deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0);
+  }
 }
 
 /*
@@ -238,11 +266,27 @@ section {
   transition: background-color 0.3s ease;
 }
 
-.project-item:hover {
-  background-color: var(--item-background-color);
-  border: 1px solid var(--border-color);
-  cursor: pointer;
+.project-card-bottom-border {
+  border: none !important;
+  border-bottom: 1px solid #292929 !important;
 }
+
+.project-card-top-bottom-border {
+  border: none !important;
+  border-top: 1px solid #292929 !important;
+  border-bottom: 1px solid #292929 !important;
+}
+
+.project-card {
+  cursor: pointer;
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
+.project-item:hover {
+  border: 1px solid var(--border-color);
+}
+
 
 .project-item img {
   width: 100%;
@@ -273,10 +317,11 @@ section {
 .project-title {
   font-family: var(--font-family);
   font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 22px;
   color: var(--text-color);
+  margin-bottom: 10px;
 }
 
 .project-description {
