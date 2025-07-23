@@ -349,6 +349,15 @@ section {
   text-align: left;
 }
 
+.contact-image img {
+  width: 300px;
+}
+
+.contact-image {
+  display: flex;
+  rotate: 108deg;
+}
+
 .contact-info {
   display: flex;
   flex-direction: column;
