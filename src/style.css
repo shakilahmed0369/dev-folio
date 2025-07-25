@@ -4,88 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Pulsing dot animation */
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  75% {
-    transform: scale(3);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
-}
-
-.pulse-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: rgb(18, 201, 113);
-  position: relative;
-  display: inline-block;
-  margin: 0 5px 0 0;
-}
-
-.pulse-dot::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgb(18, 201, 113);
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-  opacity: 0;
-}
-
-.floating-project-img {
-  pointer-events: none;
-  opacity: 0.96;
-  filter: drop-shadow(0 8px 32px rgba(0,0,0,0.22));
-  border-radius: 1rem;
-  background: linear-gradient(135deg, #232526 0%, #414345 100%);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
-  transition: opacity 0.25s, transform 0.25s, box-shadow 0.25s;
-  will-change: transform, opacity;
-  z-index: 9999;
-}
-
-.floating-project-img {
-  animation: floatUp 0.4s cubic-bezier(.25,.8,.25,1) both;
-}
-
-@keyframes floatUp {
-  0% {
-    opacity: 0;
-    transform: translateY(40px) scale(0.92) rotate(-3deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1) rotate(0);
-  }
-}
-
 /*
   CSS Custom Properties (Variables)
   These variables define the color palette, typography, and layout settings
   for consistent theming across the application.
 */
 :root {
-  --background-color: #0a0a0d;              /* Main background color */
-  --text-color: #ffffff;                    /* Primary text color */
+  --background-color: #0a0a0d; /* Main background color */
+  --text-color: #ffffff; /* Primary text color */
   --text-secondary-color: rgba(255, 255, 255, 0.6); /* Secondary text color */
-  --border-color: rgba(82, 82, 82, 0.2);    /* Border color for UI elements */
-  --item-background-color: rgba(114, 120, 136, .16); /* Card/item background */
+  --border-color: rgba(82, 82, 82, 0.2); /* Border color for UI elements */
+  --item-background-color: rgba(114, 120, 136, 0.16); /* Card/item background */
 
   --font-family: "Inter-Medium", "Inter", sans-serif; /* Main font family */
-  --font-weight: 500;                       /* Default font weight */
-  --letter-spacing: -0.18px;                /* Default letter spacing */
-  --line-height: 22px;                      /* Default line height */
+  --font-weight: 500; /* Default font weight */
+  --letter-spacing: -0.18px; /* Default letter spacing */
+  --line-height: 22px; /* Default line height */
 }
 
 /* Reset default margin and padding for all elements */
@@ -133,7 +67,7 @@ section {
 .profile-description {
   font-family: var(--font-family);
   font-weight: 400;
-  letter-spacing: -.34px;
+  letter-spacing: -0.34px;
   line-height: 29px;
   color: var(--text-color);
   font-size: 20px;
@@ -143,16 +77,12 @@ section {
 .profile-build {
   font-family: var(--font-family);
   font-weight: 500;
-  letter-spacing: -.34px;
+  letter-spacing: -0.34px;
   line-height: 29px;
   color: var(--text-color);
   font-size: 20px;
   margin-top: 20px;
   color: var(--text-secondary-color);
-}
-
-.profile-action  {
-  
 }
 
 .profile-action .btn {
@@ -170,12 +100,42 @@ section {
 }
 
 .profile-action .btn::after {
-  content: '⟶';
+  content: "⟶";
   position: absolute;
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
   transition: transform 0.3s ease;
+}
+
+.floating-project-img {
+  pointer-events: none;
+  opacity: 0.96;
+  filter: drop-shadow(0 8px 32px rgba(0, 0, 0, 0.22));
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22);
+  transition:
+    opacity 0.25s,
+    transform 0.25s,
+    box-shadow 0.25s;
+  will-change: transform, opacity;
+  z-index: 9999;
+}
+
+.floating-project-img {
+  animation: floatUp 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) both;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.92) rotate(-3deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0);
+  }
 }
 
 .profile-action .btn:hover {
@@ -205,6 +165,45 @@ section {
   font-weight: 600;
 }
 
+/* Pulsing dot animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(3);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(18, 201, 113);
+  position: relative;
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+
+.pulse-dot::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(18, 201, 113);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  opacity: 0;
+}
+
 .section-title {
   display: flex;
   align-items: center;
@@ -212,7 +211,8 @@ section {
   margin-bottom: 16px;
 }
 
-.section-title h2, .section-title h3 {
+.section-title h2,
+.section-title h3 {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 600;
@@ -286,7 +286,6 @@ section {
 .project-item:hover {
   border: 1px solid var(--border-color);
 }
-
 
 .project-item img {
   width: 100%;
@@ -470,14 +469,14 @@ section {
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
-  color: rgba(114, 120, 136, .6);
+  color: rgba(114, 120, 136, 0.6);
 }
 
 .footer-items {
   font-family: var(--font-family);
   font-size: 12px;
   line-height: 22px;
-  color: rgba(114, 120, 136, .6);
+  color: rgba(114, 120, 136, 0.6);
 }
 
 /* Timeline Styles */
@@ -496,7 +495,7 @@ section {
 }
 
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -610,19 +609,19 @@ section {
   .timeline-container {
     padding: 0 20px;
   }
-  
+
   .timeline {
     padding-left: 20px;
   }
-  
+
   .timeline-content {
     padding: 15px;
   }
-  
+
   .timeline-content h5 {
     font-size: 16px;
   }
-  
+
   .timeline-description {
     font-size: 13px;
   }
@@ -645,7 +644,7 @@ section {
 
 /* Bottom glow */
 .about-image-shadow::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -658,7 +657,6 @@ section {
   border-radius: 80px;
   z-index: 0;
 }
-
 
 .about-love {
   width: 127px;
@@ -691,9 +689,15 @@ section {
   border: 1px solid grey;
   border-radius: 2px 6px 6px 2px;
   background: white;
-  box-shadow: 10px 40px 40px -10px #00000030, inset -2px 0 0 grey,
-    inset -3px 0 0 #dbdbdb, inset -4px 0 0 white, inset -5px 0 0 #dbdbdb,
-    inset -6px 0 0 white, inset -7px 0 0 #dbdbdb, inset -8px 0 0 white,
+  box-shadow:
+    10px 40px 40px -10px #00000030,
+    inset -2px 0 0 grey,
+    inset -3px 0 0 #dbdbdb,
+    inset -4px 0 0 white,
+    inset -5px 0 0 #dbdbdb,
+    inset -6px 0 0 white,
+    inset -7px 0 0 #dbdbdb,
+    inset -8px 0 0 white,
     inset -9px 0 0 #dbdbdb;
 }
 
@@ -701,7 +705,8 @@ section {
   line-height: 0;
   position: relative;
   border-radius: 2px 6px 6px 2px;
-  box-shadow: 6px 6px 18px -2px rgba(0, 0, 0, 0.2),
+  box-shadow:
+    6px 6px 18px -2px rgba(0, 0, 0, 0.2),
     24px 28px 40px -6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
   transform: perspective(2000px) rotateY(-15deg) translateX(-10px) scaleX(0.94);
@@ -718,7 +723,8 @@ section {
 .book-image:hover {
   transform: perspective(2000px) rotateY(0deg) translateX(0px) scaleX(1);
   transform-style: preserve-3d;
-  box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    6px 6px 12px -1px rgba(0, 0, 0, 0.1),
     20px 14px 16px -6px rgba(0, 0, 0, 0.1);
 }
 
@@ -729,9 +735,11 @@ section {
   margin-left: 16px;
   top: 0;
   border-left: 2px solid #00000010;
-  background-image: linear-gradient(90deg,
-      rgba(255, 255, 255, 0.2) 0%,
-      rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   transition: all 0.5s ease;
   z-index: 5;
 }
@@ -741,9 +749,11 @@ section {
   height: 100%;
   position: absolute;
   border-radius: 3px;
-  background-image: linear-gradient(90deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.2) 100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
   top: 0;
   right: 0;
   opacity: 0.1;
@@ -790,7 +800,6 @@ section {
   padding-top: 3px;
   padding-bottom: 3px;
   text-transform: uppercase;
-
 }
 
 .blog-item .date {
@@ -827,13 +836,17 @@ section {
 }
 
 .course-item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 0;
