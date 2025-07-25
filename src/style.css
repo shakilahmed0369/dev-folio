@@ -915,4 +915,8 @@ section {
     justify-content: center;
     text-align: left;
   }
+
+  .contact-image {
+    display: none;
+  }
 }
