@@ -15,39 +15,45 @@
         <!-- ================= Navigation Bar ================ -->
         <header>
             <nav class="navigation-bar text-white flex items-center justify-between py-4">
-                <div>
-                    LOGO
-                </div>
-                <!-- Desktop Menu -->
-                <ul class="hidden md:flex space-x-6">
-                    <li><a href="/" class="hover:text-gray-300">home</a></li>
-                    <li><a href="/" class="hover:text-gray-300">work</a></li>
-                    <li><a href="/" class="hover:text-gray-300">about</a></li>
-                    <li><a href="/" class="hover:text-gray-300">books</a></li>
-                    <li><a href="/blog.html" class="hover:text-gray-300">blog</a></li>
-                </ul>
-                <button class="hidden md:block text-white py-2 px-4 rounded">Contact Me</button>
-                <!-- Hamburger Icon -->
-                <button id="menu-btn" class="block md:hidden focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
+              <div>LOGO</div>
+              <!-- Desktop Menu -->
+              <ul class="md:flex space-x-6">
+                <li><a href="/" class="hover:text-gray-300">home</a></li>
+                <li><a href="/work.html" class="hover:text-gray-300">work</a></li>
+                <li><a href="/about.html" class="hover:text-gray-300">about</a></li>
+                <li><a href="/books.html" class="hover:text-gray-300">books</a></li>
+                <li><a href="/blog.html" class="hover:text-gray-300">blog</a></li>
+              </ul>
+              <a href="/resume.pdf" download class="hidden md:flex items-center gap-2 text-white py-2 px-4 rounded">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>resume</span>
+              </a>
+              <!-- Hamburger Icon -->
+              <button id="menu-btn" class="block md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+              </button>
             </nav>
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden text-white text-center">
-                <ul class="flex flex-col items-center space-y-2 py-4">
-                    <li><a href="/" class="block py-2 hover:text-gray-300">home</a></li>
-                    <li><a href="/" class="block py-2 hover:text-gray-300">work</a></li>
-                    <li><a href="/" class="block py-2 hover:text-gray-300">about</a></li>
-                    <li><a href="/" class="block py-2 hover:text-gray-300">books</a></li>
-                    <li><a href="/" class="block py-2 hover:text-gray-300">links</a></li>
-                </ul>
-                <button class="text-white py-2 px-4 rounded w-full mt-2">Contact Me</button>
+              <ul class="flex flex-col items-center space-y-2 py-4">
+                <li><a href="/" class="block py-2 hover:text-gray-300">home</a></li>
+                <li><a href="/work.html" class="block py-2 hover:text-gray-300">work</a></li>
+                <li><a href="/about.html" class="block py-2 hover:text-gray-300">about</a></li>
+                <li><a href="/books.html" class="block py-2 hover:text-gray-300">books</a></li>
+                <li><a href="/" class="block py-2 hover:text-gray-300">links</a></li>
+              </ul>
+              <button class="text-white py-2 px-4 rounded w-full mt-2">
+                Contact Me
+              </button>
             </div>
-        </header>
+          </header>
 
         <section class="page-heading">
             <h3>Book Shelf</h3>

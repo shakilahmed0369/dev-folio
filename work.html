@@ -3,231 +3,202 @@
   Works/Projects page for Shakil Ahmed's developer portfolio.
   Contains navigation, works, and project category sections.
 -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev Folio</title>
-  </head>
-  <body>
-    <div class="container mx-auto px-4 sm:px-6 max-w-[708px]">
-      <!-- ================= Navigation Bar ================ -->
-      <header>
-        <nav
-          class="navigation-bar text-white flex items-center justify-between py-4"
-        >
-          <div>LOGO</div>
-          <!-- Desktop Menu -->
-          <ul class="hidden md:flex space-x-6">
-            <li><a href="/" class="hover:text-gray-300">home</a></li>
-            <li><a href="/" class="hover:text-gray-300">work</a></li>
-            <li><a href="/" class="hover:text-gray-300">about</a></li>
-            <li><a href="/" class="hover:text-gray-300">books</a></li>
-            <li><a href="/blog.html" class="hover:text-gray-300">blog</a></li>
-          </ul>
-          <button class="hidden md:block text-white py-2 px-4 rounded">
-            Contact Me
-          </button>
-          <!-- Hamburger Icon -->
-          <button id="menu-btn" class="block md:hidden focus:outline-none">
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
-        </nav>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden text-white text-center">
-          <ul class="flex flex-col items-center space-y-2 py-4">
-            <li><a href="/" class="block py-2 hover:text-gray-300">home</a></li>
-            <li><a href="/" class="block py-2 hover:text-gray-300">work</a></li>
-            <li>
-              <a href="/" class="block py-2 hover:text-gray-300">about</a>
-            </li>
-            <li>
-              <a href="/" class="block py-2 hover:text-gray-300">books</a>
-            </li>
-            <li>
-              <a href="/" class="block py-2 hover:text-gray-300">links</a>
-            </li>
-          </ul>
-          <button class="text-white py-2 px-4 rounded w-full mt-2">
-            Contact Me
-          </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Folio</title>
+</head>
+
+<body>
+  <div class="container mx-auto px-4 sm:px-6 max-w-[708px]">
+    <!-- ================= Navigation Bar ================ -->
+    <header>
+      <nav class="navigation-bar text-white flex items-center justify-between py-4">
+        <div>LOGO</div>
+        <!-- Desktop Menu -->
+        <ul class="md:flex space-x-6">
+          <li><a href="/" class="hover:text-gray-300">home</a></li>
+          <li><a href="/work.html" class="hover:text-gray-300">work</a></li>
+          <li><a href="/about.html" class="hover:text-gray-300">about</a></li>
+          <li><a href="/courses.html" class="hover:text-gray-300">courses</a></li>
+          <li><a href="/blog.html" class="hover:text-gray-300">blog</a></li>
+        </ul>
+        <a href="/resume.pdf" download class="hidden md:flex items-center gap-2 text-white py-2 px-4 rounded">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>resume</span>
+        </a>
+        <!-- Hamburger Icon -->
+        <button id="menu-btn" class="block md:hidden focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden text-white text-center">
+        <ul class="flex flex-col items-center space-y-2 py-4">
+          <li><a href="/" class="block py-2 hover:text-gray-300">home</a></li>
+          <li><a href="/work.html" class="block py-2 hover:text-gray-300">work</a></li>
+          <li><a href="/about.html" class="block py-2 hover:text-gray-300">about</a></li>
+          <li><a href="/courses.html" class="block py-2 hover:text-gray-300">courses</a></li>
+          <li><a href="/blog.html" class="block py-2 hover:text-gray-300">blog</a></li>
+        </ul>
+
+        <a href="/resume.pdf" download class="hidden md:flex items-center gap-2 text-white py-2 px-4 rounded">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>resume</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="page-heading">
+      <h1>Works</h1>
+      <p>
+        It has been an absolute pleasure to put my heart and soul into these
+        projects. While you're here, browse these projects
+      </p>
+      <div class="divider">
+        <img src="./devider.svg" alt="" />
+      </div>
+    </section>
+
+    <section>
+      <!-- pills -->
+      <div class="project-categories flex justify-center space-x-4">
+        <button data-category="project" class="text-black py-2 px-4 rounded-full active">
+          Projects
+        </button>
+        <button data-category="open-source" class="text-black py-2 px-4 rounded-full">
+          Open Source
+        </button>
+        <button data-category="plugins" class="text-black py-2 px-4 rounded-full">
+          Plugins
+        </button>
+      </div>
+
+      <!-- Project Items -->
+      <div class="project-card project group relative overflow-hidden project-card-bottom-border hover:border-pink-500/20 transition-all duration-300" data-image="./project-images/project1.png">
+        <h3 class="project-title group-hover:text-pink-400 transition-colors">SkillGro - Learning Management Platform</h3>
+        <p class="project-description mb-4">A powerful LMS with course selling features, analytics, and instructor dashboards.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-pink-500/20 text-pink-300">Laravel</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-blue-500/20 text-blue-300">Vue.js</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-purple-500/20 text-purple-300">Tailwind</span>
         </div>
-      </header>
-
-      <section class="page-heading">
-        <h3>Works</h3>
-        <p>
-          It has been an absolute pleasure to put my heart and soul into these
-          projects. While you're here, browse these projects
-        </p>
-        <div class="divider">
-          <img src="./devider.svg" alt="" />
+      </div>
+      <div class="project-card project group relative overflow-hidden project-card-bottom-border hover:border-green-500/20 transition-all duration-300" data-image="./project-images/project2.png">
+        <h3 class="project-title group-hover:text-green-400 transition-colors">DevConnect - Real-time Dev Chat</h3>
+        <p class="project-description mb-4">A real-time chat app for developers, featuring channels, private groups, and code snippets.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-green-500/20 text-green-300">Node.js</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-yellow-500/20 text-yellow-300">Socket.IO</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-500/20 text-gray-300">Express</span>
         </div>
-      </section>
-
-      <section>
-        <!-- pills -->
-        <div class="project-categories flex justify-center space-x-4">
-          <button
-            data-category="project"
-            class="bg-white text-black py-2 px-4 rounded-full active"
-          >
-            Projects
-          </button>
-          <button
-            data-category="open-source"
-            class="bg-white text-black py-2 px-4 rounded-full"
-          >
-            Open Source
-          </button>
-          <button
-            data-category="plugins"
-            class="bg-white text-black py-2 px-4 rounded-full"
-          >
-            Plugins
-          </button>
+      </div>
+      <div class="project-card project group relative overflow-hidden project-card-bottom-border hover:border-blue-500/20 transition-all duration-300" data-image="./project-images/project3.png">
+        <h3 class="project-title group-hover:text-blue-400 transition-colors">Portfolio Builder</h3>
+        <p class="project-description mb-4">A drag-and-drop portfolio site builder for developers and designers.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-blue-500/20 text-blue-300">React</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-pink-500/20 text-pink-300">Tailwind</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-500/20 text-gray-300">Firebase</span>
         </div>
+      </div>
 
-        <div class="projects-grid grid sm:grid-cols-3 gap-4">
-          <div class="project-item project flex flex-row items-center gap-4 sm:flex-col sm:items-stretch">
-            <div class="image-wrapper">
-              <img
-                src="./project-images/project1.png"
-                alt="Project 1"
-                class="project-image object-cover"
-              />
-              <span class="project-tag">Laravel</span>
-            </div>
-            <div>
-              <h4 class="project-title">SkillGro</h4>
-              <p class="project-description">
-                Learning Management and Course Selling Platform
-              </p>
-            </div>
-          </div>
+      <!-- Open Source Projects -->
+      <div class="project-card open-source group relative overflow-hidden project-card-bottom-border hover:border-purple-500/20 transition-all duration-300" data-image="./project-images/project4.png">
+        <h3 class="project-title group-hover:text-purple-400 transition-colors">OpenAPI Docs Generator</h3>
+        <p class="project-description mb-4">CLI tool to generate beautiful API documentation from OpenAPI specs.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-purple-500/20 text-purple-300">Node.js</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-blue-500/20 text-blue-300">TypeScript</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-pink-500/20 text-pink-300">OpenAPI</span>
+        </div>
+      </div>
+      <div class="project-card open-source group relative overflow-hidden project-card-bottom-border hover:border-yellow-500/20 transition-all duration-300" data-image="./project-images/project5.png">
+        <h3 class="project-title group-hover:text-yellow-400 transition-colors">Tailwind Color Palette</h3>
+        <p class="project-description mb-4">A community-driven Tailwind CSS color palette extension for designers and devs.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-yellow-500/20 text-yellow-300">Tailwind</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-blue-500/20 text-blue-300">CSS</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-green-500/20 text-green-300">Open Source</span>
+        </div>
+      </div>
+      <div class="project-card open-source group relative overflow-hidden project-card-bottom-border hover:border-pink-500/20 transition-all duration-300" data-image="./project-images/project6.png">
+        <h3 class="project-title group-hover:text-pink-400 transition-colors">Markdown Blog Engine</h3>
+        <p class="project-description mb-4">A static blog generator for markdown files with live preview and theming.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-pink-500/20 text-pink-300">Markdown</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-500/20 text-gray-300">Node.js</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-blue-500/20 text-blue-300">Theming</span>
+        </div>
+      </div>
 
-          <div class="project-item open-source flex flex-row items-center gap-4 sm:flex-col sm:items-stretch">
-            <div class="image-wrapper">
-              <img
-                src="./project-images/project1.png"
-                alt="Project 1"
-                class="project-image object-cover"
-              />
-              <span class="project-tag">Laravel</span>
-            </div>
-            <div>
-              <h4 class="project-title">SkillGro</h4>
-              <p class="project-description">
-                Learning Management and Course Selling Platform
-              </p>
-            </div>
-          </div>
+      <!-- Plugins Projects -->
+      <div class="project-card plugins group relative overflow-hidden project-card-bottom-border hover:border-orange-500/20 transition-all duration-300" data-image="./project-images/project7.png">
+        <h3 class="project-title group-hover:text-orange-400 transition-colors">VSCode Snippet Sync</h3>
+        <p class="project-description mb-4">A VSCode extension to sync code snippets across devices using cloud storage.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-orange-500/20 text-orange-300">VSCode</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-blue-500/20 text-blue-300">Cloud</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-500/20 text-gray-300">Sync</span>
+        </div>
+      </div>
+      <div class="project-card plugins group relative overflow-hidden project-card-bottom-border hover:border-teal-500/20 transition-all duration-300" data-image="./project-images/project8.png">
+        <h3 class="project-title group-hover:text-teal-400 transition-colors">Notion Exporter</h3>
+        <p class="project-description mb-4">A plugin to export Notion pages to markdown and PDF with one click.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-teal-500/20 text-teal-300">Notion</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-pink-500/20 text-pink-300">Markdown</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-gray-500/20 text-gray-300">PDF</span>
+        </div>
+      </div>
+      <div class="project-card plugins group relative overflow-hidden project-card-bottom-border hover:border-indigo-500/20 transition-all duration-300" data-image="./project-images/project9.png">
+        <h3 class="project-title group-hover:text-indigo-400 transition-colors">Figma Asset Exporter</h3>
+        <p class="project-description mb-4">A Figma plugin to quickly export assets in multiple formats and resolutions.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-indigo-500/20 text-indigo-300">Figma</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-blue-500/20 text-blue-300">SVG</span>
+          <span class="px-3 py-1 text-xs font-medium rounded-full bg-green-500/20 text-green-300">PNG</span>
+        </div>
+      </div>
 
-          <div class="project-item open-source flex flex-row items-center gap-4 sm:flex-col sm:items-stretch">
-            <div class="image-wrapper">
-              <img
-                src="./project-images/project1.png"
-                alt="Project 1"
-                class="project-image object-cover"
-              />
-              <span class="project-tag">Laravel</span>
+    </section>
+    <section>
+      <footer>
+        <div class="footer-content flex-col text-center text-white items-center">
+          <p>&copy;shakil ahmed 2025</p>
+          <div class="footer-items flex justify-center gap-2">
+            <div class="footer-item">
+              <a href="/">github</a>
             </div>
-            <div>
-              <h4 class="project-title">SkillGro</h4>
-              <p class="project-description">
-                Learning Management and Course Selling Platform
-              </p>
+            <div class="footer-item">
+              <a href="/">linkedin</a>
             </div>
-          </div>
-
-          <div class="project-item plugins flex flex-row items-center gap-4 sm:flex-col sm:items-stretch">
-            <div class="image-wrapper">
-              <img
-                src="./project-images/project1.png"
-                alt="Project 1"
-                class="project-image object-cover"
-              />
-              <span class="project-tag">Laravel</span>
-            </div>
-            <div>
-              <h4 class="project-title">SkillGro</h4>
-              <p class="project-description">
-                Learning Management and Course Selling Platform
-              </p>
-            </div>
-          </div>
-
-          <div class="project-item plugins flex flex-row items-center gap-4 sm:flex-col sm:items-stretch">
-            <div class="image-wrapper">
-              <img
-                src="./project-images/project1.png"
-                alt="Project 1"
-                class="project-image object-cover"
-              />
-              <span class="project-tag">Laravel</span>
-            </div>
-            <div>
-              <h4 class="project-title">SkillGro</h4>
-              <p class="project-description">
-                Learning Management and Course Selling Platform
-              </p>
-            </div>
-          </div>
-
-          <div class="project-item plugins flex flex-row items-center gap-4 sm:flex-col sm:items-stretch">
-            <div class="image-wrapper">
-              <img
-                src="./project-images/project1.png"
-                alt="Project 1"
-                class="project-image object-cover"
-              />
-              <span class="project-tag">Laravel</span>
-            </div>
-            <div>
-              <h4 class="project-title">SkillGro</h4>
-              <p class="project-description">
-                Learning Management and Course Selling Platform
-              </p>
+            <div class="footer-item">
+              <a href="/">discord</a>
             </div>
           </div>
         </div>
-      </section>
-      <section>
-        <footer>
-          <div
-            class="footer-content flex-col text-center text-white items-center"
-          >
-            <p>&copy;shakil ahmed 2025</p>
-            <div class="footer-items flex justify-center gap-2">
-              <div class="footer-item">
-                <a href="/">github</a>
-              </div>
-              <div class="footer-item">
-                <a href="/">linkedin</a>
-              </div>
-              <div class="footer-item">
-                <a href="/">discord</a>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </section>
-    </div>
+      </footer>
+    </section>
+  </div>
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/work.js"></script>
+</body>
+
 </html>
