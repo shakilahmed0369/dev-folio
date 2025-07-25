@@ -8,7 +8,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0a0d" media="(prefers-color-scheme: dark)">
   <title>Dev Folio</title>
+  <link rel="stylesheet" href="/src/light-theme.css" id="light-theme">
+  <script>
+    // Initialize theme before content loads to prevent flash of unstyled content
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      
+      // Apply theme immediately to prevent FOUC
+      if (savedTheme === 'dark' || (savedTheme === null && prefersDark)) {
+        document.documentElement.classList.add('dark-theme');
+        document.documentElement.style.setProperty('color-scheme', 'dark');
+      } else {
+        document.documentElement.classList.remove('dark-theme');
+        document.documentElement.style.setProperty('color-scheme', 'light');
+      }
+    })();
+  </script>
 </head>
 
 <body>

@@ -12,7 +12,7 @@
   /* =======================
      Color Palette
      ======================= */
-  
+
   /* Base Colors */
   --color-black: #000000;
   --color-white: #ffffff;
@@ -25,24 +25,28 @@
   --color-grey-700: #424242;
   --color-grey-800: #212121;
   --color-grey-900: #0a0a0d;
-  
+
   /* Accent Colors */
   --color-accent-pink: #ff0080;
   --color-accent-purple: #7928ca;
   --color-accent-blue: #152cfb;
   --color-accent-green: #12c971;
   --color-accent-red: #f76e6e;
-  
+
   /* Gradients */
-  --gradient-primary: linear-gradient(90deg, var(--color-accent-pink), var(--color-accent-purple));
+  --gradient-primary: linear-gradient(
+    90deg,
+    var(--color-accent-pink),
+    var(--color-accent-purple)
+  );
   --gradient-dark: linear-gradient(135deg, #232526 0%, #414345 100%);
-  
+
   /* Theme Colors */
   --color-background: var(--color-grey-900);
   --color-text: var(--color-white);
   --color-text-secondary: rgba(255, 255, 255, 0.6);
   --color-text-muted: rgba(114, 120, 136, 0.6);
-  
+
   /* UI Colors */
   --color-border: rgba(82, 82, 82, 0.2);
   --color-border-light: rgba(255, 255, 255, 0.1);
@@ -50,10 +54,10 @@
   --color-card-bg: rgba(114, 120, 136, 0.16);
   --color-card-hover: rgba(255, 255, 255, 0.03);
   --color-shadow: rgba(0, 0, 0, 0.22);
-  
+
   /* Special Effects */
   --color-glow: rgba(247, 110, 110, 0.41);
-  
+
   /* =======================
      Typography
      ======================= */
@@ -61,7 +65,7 @@
   --font-weight: 500;
   --letter-spacing: -0.18px;
   --line-height: 22px;
-  
+
   /* Z-index */
   --z-modal: 9999;
   --z-tooltip: 1000;
@@ -198,7 +202,10 @@ section {
   filter: drop-shadow(0 8px 32px var(--color-shadow));
   background: var(--gradient-dark);
   box-shadow: 0 8px 32px var(--color-shadow);
-  transition: opacity 0.25s, transform 0.25s, box-shadow 0.25s;
+  transition:
+    opacity 0.25s,
+    transform 0.25s,
+    box-shadow 0.25s;
   will-change: transform, opacity;
   z-index: 9999;
   animation: floatUp 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) both;
@@ -235,8 +242,9 @@ section {
 .gradient-text {
   background: var(--gradient-primary);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
   font-weight: 600;
 }
 
@@ -275,7 +283,11 @@ section {
 
 .section-title a {
   font-family: var(--font-family);
-  background: linear-gradient(90deg, var(--color-accent-pink), var(--color-accent-purple));
+  background: linear-gradient(
+    90deg,
+    var(--color-accent-pink),
+    var(--color-accent-purple)
+  );
   font-weight: 500;
   line-height: 29px;
   font-size: 14px;
@@ -431,7 +443,11 @@ section {
   font-size: 40px;
   line-height: 29px;
   color: var(--color-text);
-  background: linear-gradient(90deg, var(--color-accent-pink), var(--color-accent-purple));
+  background: linear-gradient(
+    90deg,
+    var(--color-accent-pink),
+    var(--color-accent-purple)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 10px 0px 20px 0px;
@@ -473,7 +489,11 @@ section {
   font-size: 25px;
   line-height: 29px;
   color: var(--color-text);
-  background: linear-gradient(90deg, var(--color-accent-pink), var(--color-accent-purple));
+  background: linear-gradient(
+    90deg,
+    var(--color-accent-pink),
+    var(--color-accent-purple)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 10px 0px 10px 0px;

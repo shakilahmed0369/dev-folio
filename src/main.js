@@ -1,4 +1,5 @@
 import "./style.css";
+import "./theme";
 
 // Get references to navigation and project filtering DOM elements
 const menuBtn = document.getElementById("menu-btn");
