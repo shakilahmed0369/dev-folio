@@ -910,6 +910,11 @@ section {
 }
 
 @media (max-width: 639px) {
+
+  .navigation-bar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .project-image {
     width: 100px !important;
     height: 100px !important;
